@@ -41,6 +41,7 @@ public class Main {
                     sum += Integer.parseInt(arr[i][j]);
                 } catch (NumberFormatException e) {
                     System.out.printf("В ячейке массива %d %d находится NaN\n", i, j);
+                    System.out.println();
                     throw new MyArrayDataException();
                 }
             }
@@ -55,5 +56,5 @@ public class Main {
             }
         }
     }
-
 }
+
